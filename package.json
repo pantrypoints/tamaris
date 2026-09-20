@@ -10,7 +10,7 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^3.2.2",
+		"@sveltejs/adapter-cloudflare": "^7.2.9",
 		"@sveltejs/kit": "^2.5.28",
 		"@sveltejs/vite-plugin-svelte": "^4.0.0",
 		"svelte": "^5.1.9",
