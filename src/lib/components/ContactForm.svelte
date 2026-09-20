@@ -25,6 +25,62 @@
 
 		status = 'sending';
 
+		try {
+			const res = await fetch('https://pantrypoints.com/api/external', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({
+					name: name.trim(),
+					email: email.trim(),
+					phone: phone.trim() || null,
+					message: message.trim(),
+					source: 'tamaris-restobar'
+				})
+			});
+
+			if (!res.ok) throw new Error(`Request failed: ${res.status}`);
+
+			status = 'sent';
+			name = '';
+			email = '';
+			phone = '';
+			message = '';
+		} catch (err) {
+			console.error('Inquiry submit failed:', err);
+			status = 'error';
+		}
+	}
+</script>
+
+<!-- <script>
+	let name = $state('');
+	let email = $state('');
+	let phone = $state('');
+	let message = $state('');
+	let status = $state('idle'); // idle | sending | sent | error
+	let errors = $state({});
+
+	function validate() {
+		const e = {};
+		if (!name.trim()) e.name = 'Please enter your name.';
+		if (!email.trim()) {
+			e.email = 'Please enter your email.';
+		} else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+			e.email = 'Please enter a valid email.';
+		}
+		if (!message.trim()) e.message = 'Tell us a bit about your inquiry.';
+		errors = e;
+		return Object.keys(e).length === 0;
+	}
+
+	async function handleSubmit(event) {
+		event.preventDefault();
+		if (!validate()) return;
+
+		status = 'sending';
+
 		// TODO: Wire this up to your backend, email service (e.g. Formspree,
 		// EmailJS) or a SvelteKit form action that emails/saves the inquiry.
 		try {
@@ -38,7 +94,7 @@
 			status = 'error';
 		}
 	}
-</script>
+</script> -->
 
 <section id="contact" class="section contact-section">
 	<div class="container">
