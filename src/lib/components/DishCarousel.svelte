@@ -7,28 +7,28 @@
 			price: '₱168',
 			image: '/images/dish-baby-squid-kebab.jpg',
 			description: 'Char-grilled baby squid skewers, served with a citrus dipping sauce.'
-		},
-		{
-			name: 'T-Bone Jumbo Steak',
-			price: '₱588',
-			priceNote: 'approx.',
-			image: '/images/promo-3some-tbone.jpg',
-			description: "Our awesome pride — a hefty jumbo T-bone grilled to your liking, with rice and fries."
-		},
-		{
-			name: 'Cajun Seafood Boil',
-			price: '₱850',
-			priceNote: 'approx.',
-			image: '/images/promo-mothers-day.jpg',
-			description: 'Shrimp, mussels, and crab tossed in bold Cajun spices with sweet corn.'
-		},
-		{
-			name: 'Crispy Pata',
-			price: '₱650',
-			priceNote: 'approx.',
-			image: '/images/promo-mothers-day.jpg',
-			description: 'Deep-fried pork leg, crackling skin outside, tender meat inside — a Filipino favorite.'
 		}
+		// {
+		// 	name: 'T-Bone Jumbo Steak',
+		// 	price: '₱588',
+		// 	priceNote: 'approx.',
+		// 	image: '/images/promo-3some-tbone.jpg',
+		// 	description: "Our awesome pride — a hefty jumbo T-bone grilled to your liking, with rice and fries."
+		// },
+		// {
+		// 	name: 'Cajun Seafood Boil',
+		// 	price: '₱850',
+		// 	priceNote: 'approx.',
+		// 	image: '/images/promo-mothers-day.jpg',
+		// 	description: 'Shrimp, mussels, and crab tossed in bold Cajun spices with sweet corn.'
+		// },
+		// {
+		// 	name: 'Crispy Pata',
+		// 	price: '₱650',
+		// 	priceNote: 'approx.',
+		// 	image: '/images/promo-mothers-day.jpg',
+		// 	description: 'Deep-fried pork leg, crackling skin outside, tender meat inside — a Filipino favorite.'
+		// }
 	];
 
 	let index = $state(0);

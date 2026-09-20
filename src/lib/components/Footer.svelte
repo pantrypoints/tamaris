@@ -30,9 +30,10 @@
 	</div>
 
 	<div class="container bottom">
-		<p>© {year} Tamari's Steak and Seafood Restobar. All rights reserved.</p>
+		<p>© {year} Tamari's Steak and Seafood Restobar. All rights reserved. Made by <a href="https://www.pantrypoints.com">Pantrypoints Technologies</a></p>
 	</div>
 </footer>
+
 
 <style>
 	footer {
